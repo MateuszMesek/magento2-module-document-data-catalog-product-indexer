@@ -5,7 +5,7 @@
     "require": {
         "magento/framework": "*",
         "magento/module-catalog": "*",
-        "mateuszmesek-magento2/module-document-data-product-category": "*",
+        "mateuszmesek-magento2/module-document-data-catalog-product": "*",
         "mateuszmesek-magento2/module-document-data-indexer": "*"
     },
     "license": [
