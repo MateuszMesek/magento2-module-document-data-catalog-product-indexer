@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"  xsi:noNamespaceSchemaLocation="urn:magento:module:MateuszMesek_DocumentDataIndexer:etc/document_data_indexer.xsd">
+    <document name="catalog_product">
+        <dimensionProvider name="MateuszMesek\DocumentDataCatalogProductIndexer\DimensionProvider"/>
+        <entityIdsResolver name="MateuszMesek\DocumentDataCatalogProductIndexer\EntityIdsResolver"/>
+        <indexNamesProvider name=""/>
+        <indexNameResolver name="MateuszMesek\DocumentDataCatalogProductIndexer\IndexNameResolver"/>
+        <dataResolver name="MateuszMesek\DocumentDataCatalogProductIndexer\DataResolver"/>
+    </document>
+</config>

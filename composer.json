@@ -1,14 +1,14 @@
 {
-    "name": "mateuszmesek-magento2/module-document-catalog-product-indexer",
+    "name": "mateuszmesek-magento2/module-document-data-catalog-product-indexer",
     "description": "N/A",
     "type": "magento2-module",
     "require": {
         "magento/framework": "*",
         "magento/module-catalog": "*",
-        "mateuszmesek-magento2/module-document": "^1.0"
+        "mateuszmesek-magento2/module-document-data": "^1.0"
     },
     "replace": {
-        "mateuszmesek-magento2/module-document-catalog-product-indexer": "*"
+        "mateuszmesek-magento2/module-document-data-catalog-product-indexer": "*"
     },
     "license": [
         "MIT"
@@ -18,7 +18,7 @@
             "registration.php"
         ],
         "psr-4": {
-            "MateuszMesek\\DocumentCatalogProductIndexer\\": "src"
+            "MateuszMesek\\DocumentDataCatalogProductIndexer\\": "src"
         }
     }
 }

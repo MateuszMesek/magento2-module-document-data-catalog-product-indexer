@@ -1,13 +1,13 @@
 <?php declare(strict_types=1);
 
-namespace MateuszMesek\DocumentCatalogProductIndexer\Indexer;
+namespace MateuszMesek\DocumentDataCatalogProductIndexer\Indexer;
 
 use Magento\Catalog\Model\ResourceModel\Product\CollectionFactory;
 use Magento\Framework\Indexer\ActionInterface;
 use Magento\Framework\Indexer\DimensionalIndexerInterface;
 use Magento\Framework\Indexer\DimensionProviderInterface;
 use Magento\Store\Model\StoreDimensionProvider;
-use MateuszMesek\DocumentCatalogProduct\Command\GetDocumentDataByProductIdAndStoreId;
+use MateuszMesek\DocumentDataCatalogProduct\Command\GetDocumentDataByProductIdAndStoreId;
 
 class Action implements ActionInterface, DimensionalIndexerInterface, \Magento\Framework\Mview\ActionInterface
 {
