@@ -3,7 +3,6 @@
     <document name="catalog_product">
         <dimensionProvider name="MateuszMesek\DocumentDataCatalogProductIndexer\DimensionProvider"/>
         <entityIdsResolver name="MateuszMesek\DocumentDataCatalogProductIndexer\EntityIdsResolver"/>
-        <indexNamesProvider name=""/>
         <indexNameResolver name="MateuszMesek\DocumentDataCatalogProductIndexer\IndexNameResolver"/>
         <dataResolver name="MateuszMesek\DocumentDataCatalogProductIndexer\DataResolver"/>
     </document>

@@ -3,8 +3,8 @@
 namespace MateuszMesek\DocumentDataCatalogProductIndexer;
 
 use MateuszMesek\DocumentDataCatalogProduct\Command\GetDocumentDataByProductIdAndStoreId;
-use MateuszMesek\DocumentDataIndexerApi\DataResolverInterface;
-use MateuszMesek\DocumentDataIndexerApi\DimensionResolverInterface;
+use MateuszMesek\DocumentDataIndexApi\DataResolverInterface;
+use MateuszMesek\DocumentDataIndexApi\DimensionResolverInterface;
 use Traversable;
 
 class DataResolver implements DataResolverInterface

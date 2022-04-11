@@ -1,6 +1,6 @@
 <?xml version="1.0" ?>
 <config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
-    <virtualType name="MateuszMesek\DocumentDataCatalogProductIndexer\DimensionProvider" type="MateuszMesek\DocumentDataIndexer\DimensionProvider\WithDocumentNameProvider">
+    <virtualType name="MateuszMesek\DocumentDataCatalogProductIndexer\DimensionProvider" type="MateuszMesek\DocumentDataIndex\DimensionProvider\WithDocumentNameProvider">
         <arguments>
             <argument name="documentName" xsi:type="const">Magento\Catalog\Model\Product::ENTITY</argument>
             <argument name="dimensionProvider" xsi:type="object">Magento\Store\Model\StoreDimensionProvider</argument>
@@ -8,22 +8,17 @@
     </virtualType>
     <type name="MateuszMesek\DocumentDataCatalogProductIndexer\DataResolver">
         <arguments>
-            <argument name="storeIdResolver" xsi:type="object">MateuszMesek\DocumentDataIndexer\DimensionResolver\StoreIdResolver</argument>
+            <argument name="storeIdResolver" xsi:type="object">MateuszMesek\DocumentDataIndex\DimensionResolver\StoreIdResolver</argument>
         </arguments>
     </type>
     <type name="MateuszMesek\DocumentDataCatalogProductIndexer\EntityIdsResolver">
         <arguments>
-            <argument name="storeIdResolver" xsi:type="object">MateuszMesek\DocumentDataIndexer\DimensionResolver\StoreIdResolver</argument>
+            <argument name="storeIdResolver" xsi:type="object">MateuszMesek\DocumentDataIndex\DimensionResolver\StoreIdResolver</argument>
         </arguments>
     </type>
     <type name="MateuszMesek\DocumentDataCatalogProductIndexer\IndexNameResolver">
         <arguments>
-            <argument name="storeIdResolver" xsi:type="object">MateuszMesek\DocumentDataIndexer\DimensionResolver\StoreIdResolver</argument>
-        </arguments>
-    </type>
-    <type name="MateuszMesek\DocumentDataCatalogProductIndexer\Command\GetIndexNames">
-        <arguments>
-            <argument name="dimensionProvider" xsi:type="object">MateuszMesek\DocumentDataCatalogProductIndexer\DimensionProvider</argument>
+            <argument name="storeIdResolver" xsi:type="object">MateuszMesek\DocumentDataIndex\DimensionResolver\StoreIdResolver</argument>
         </arguments>
     </type>
 </config>
