@@ -32,7 +32,7 @@ class DataResolver implements DataResolverInterface
                 return;
             }
 
-            yield $data;
+            yield $entityId => $data;
         }
     }
 }
