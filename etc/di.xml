@@ -1,18 +1,18 @@
 <?xml version="1.0" ?>
 <config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
-    <type name="MateuszMesek\DocumentDataCatalogProductIndexer\DataResolver">
+    <type name="MateuszMesek\DocumentDataCatalogProductIndexer\Model\DataResolver">
         <arguments>
-            <argument name="storeIdResolver" xsi:type="object">MateuszMesek\DocumentDataIndexIndexer\DimensionResolver\StoreIdResolver</argument>
+            <argument name="storeIdResolver" xsi:type="object">MateuszMesek\DocumentDataIndexIndexer\Model\DimensionResolver\StoreIdResolver</argument>
         </arguments>
     </type>
-    <type name="MateuszMesek\DocumentDataCatalogProductIndexer\EntityIdsResolver">
+    <type name="MateuszMesek\DocumentDataCatalogProductIndexer\Model\IdsResolver">
         <arguments>
-            <argument name="storeIdResolver" xsi:type="object">MateuszMesek\DocumentDataIndexIndexer\DimensionResolver\StoreIdResolver</argument>
+            <argument name="storeIdResolver" xsi:type="object">MateuszMesek\DocumentDataIndexIndexer\Model\DimensionResolver\StoreIdResolver</argument>
         </arguments>
     </type>
-    <type name="MateuszMesek\DocumentDataCatalogProductIndexer\IndexNameResolver">
+    <type name="MateuszMesek\DocumentDataCatalogProductIndexer\Model\IndexNameResolver">
         <arguments>
-            <argument name="storeIdResolver" xsi:type="object">MateuszMesek\DocumentDataIndexIndexer\DimensionResolver\StoreIdResolver</argument>
+            <argument name="storeIdResolver" xsi:type="object">MateuszMesek\DocumentDataIndexIndexer\Model\DimensionResolver\StoreIdResolver</argument>
         </arguments>
     </type>
 </config>
